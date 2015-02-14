@@ -139,6 +139,11 @@
 										data: points,
 										color: '#' + dataColor
 									});
+								        series.push({
+										name: datastream.id,
+										data: points,
+										color: 'steelblue'
+									});
 
 									// Initialize Graph DOM Element
 									$('#feed-' + feedId + ' .datastreams .datastream-' + datastream.id + ' .graph').attr('id', 'graph-' + feedId + '-' + datastream.id);
